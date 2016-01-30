@@ -6,16 +6,17 @@
         <title>Random Motivational Quotes</title>
         <link rel="stylesheet" href="css/style.css"/>
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <script src="js/bootstrap.min.js"></script>
         <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
     </head>
     
     <body>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12 top text-center">
-                    <h1>Motivation Generator</h1>
+                    <h1>Motivational Quote Generator</h1>
                     <h4>Click away for your dose of motivational shit.</h4>
+                    <p>Hitting the button generates random quotes. Hit the quote for more information.</p>
                 </div>
             </div>
             <div class="row">
@@ -25,9 +26,9 @@
             </div>
             <div class="row">
                 <div class="col-md-12 quote text-center">
-                    <a href="#">
+                    <div class="quote-img" data-toggle="modal" data-target="#myModal">
                         <img class="img-responsive" src="images/newton.jpg" alt="WTF?!"/>
-                    </a>
+                    <div>
                 </div>
             </div>
             <div class="row">
@@ -41,5 +42,23 @@
                     </ul>
                 </div>
             </div>
+
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <p class="modal-quote">If I have seen further it is by standing on the shoulders of giants. - <span style="font-weight: bold">Isaac Newton</span></p>
+                        </div>
+                        <div class="modal-body">
+                            <img class="img-responsive" src="images/newton.jpg" alt="WTF?!"/>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary center-block">Tweet this to all your homies.</button>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+            
         </div>
     </body>
