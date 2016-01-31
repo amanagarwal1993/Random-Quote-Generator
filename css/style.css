@@ -45,11 +45,23 @@ ul {
     opacity: 0.85;
 }
 
-ul button {
-    background-color: #ECEDEF !important;
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
 }
 
-ul button:hover {
+ul li {
+    display: inline;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+ul a {
+    background-color: #ECEDEF !important;   
+}
+
+ul a:hover {
     background-color: darkgray !important;
 }
 
