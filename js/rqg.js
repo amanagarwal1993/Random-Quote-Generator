@@ -2,44 +2,51 @@
 var quotes = [
     {
         imgSrc: "images/cardone.jpg",
-        txt: "If you aren't where you want to be in life, you've got to work every minute and snatch up every opportunity",
-        author: "Grant Cardone"
+        txt: "If you aren't where you want to be in life, you've got to work every minute and snatch up every opportunity.",
+        author: "Grant Cardone",
+        imgLink: "pic%2Etwitter%2Ecom%2FfrgPP2OpqV"
     }, 
     
     {
         imgSrc: "images/covey.png",
-        txt: "I am not a product of my circumstances, I am a product of my decisions",
-        author: "Stephen Covey"
-    }, 
+        txt: "I am not a product of my circumstances, I am a product of my decisions.",
+        author: "Stephen Covey",
+        imgLink: "pic%2Etwitter%2Ecom%2FFaToyKVx8h"
+    },
     
     {
         imgSrc: "images/duckworth.png",
-        txt: "We have to be willing to fail, to be wrong, to start over again with lessons learned",
-        author: "Angela Lee Duckworth"        
+        txt: "We have to be willing to fail, to be wrong, to start over again with lessons learned.",
+        author: "Angela Lee Duckworth",
+        imgLink: "pic%2Etwitter%2Ecom%2FFJ0QQ6KWxE"
     }, 
     
     {
         imgSrc: "images/lincoln.jpg",
-        txt: "We can complain because rose bushes have thorns, or rejoice because thorn bushes have roses",
-        author: "Abraham Lincoln"
+        txt: "We can complain because rose bushes have thorns, or rejoice because thorn bushes have roses.",
+        author: "Abraham Lincoln",
+        imgLink: "pic%2Etwitter%2Ecom%2FVlkkD5Tko2"
     }, 
     
     {
         imgSrc: "images/newton.jpg",
-        txt: "If I have seen further it is by standing on the shoulders of giants",
-        author: "Isaac Newton"
+        txt: "If I have seen further it is by standing on the shoulders of giants.",
+        author: "Isaac Newton",
+        imgLink: "pic%2Etwitter%2Ecom%2FFAafx9ixbo"
     }, 
     
     {
         imgSrc: "images/reka.png",
-        txt: "Be the master of your fate, not the slave of your problems",
-        author: "Marinela Reka"
+        txt: "Be the master of your fate, not the slave of your problems.",
+        author: "Marinela Reka",
+        imgLink: "pic%2Etwitter%2Ecom%2FwBnoWRbvH4"
     }, 
     
     {
         imgSrc: "images/turing.jpg",
-        txt: "A man provided with paper, pencil and rubber, and subject to strict discipline, is in effect a universal machine",
-        author: "Alan Turing"
+        txt: "A man provided with paper, pencil and rubber, and subject to strict discipline, is in effect a universal machine.",
+        author: "Alan Turing",
+        imgLink: "pic%2Etwitter%2Ecom%2FT2ESuZ0WW6"
     }
 ];
 
@@ -77,6 +84,8 @@ var showQuote = function(index) {
     document.getElementById("quote-image").src = quotes[index].imgSrc;
     document.getElementById("quote-image-modal").src = quotes[index].imgSrc;
     document.getElementById("quote-text").innerHTML = quotes[index].txt + " - " + "<span style='font-weight: bold'>" + quotes[index].author + "</span>";
+    document.getElementById("twtr").href = "https://twitter.com/intent/tweet?text=" + quotes[index].imgLink + "&via=mngrwl";
+    console.log(document.getElementById("twtr").href);
 };
 
 //tweets out the current quote
